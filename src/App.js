@@ -30,7 +30,6 @@ const App = () => {
     setSearch('');
   }
 
-
   return (
     <div className="App">
       <form onSubmit={getSearch} className="search-form">
@@ -47,7 +46,7 @@ const App = () => {
           Search
         </button>
       </form>
-      <div>
+      <div className="recipes">
         {recipes.map(recipe => (
           <Recipe
             key={recipe.recipe.label}
@@ -63,4 +62,3 @@ const App = () => {
 };
 
 export default App;
-
